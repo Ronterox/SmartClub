@@ -1,8 +1,13 @@
 import { serve } from "bun";
+import { readFileSync } from "fs";
 import index from "./index.html";
 
 const server = serve({
   routes: {
+    "/logo.png": new Response(readFileSync("./public/logo.png"), {
+      headers: { "Content-Type": "image/png" },
+    }),
+
     // Serve index.html for all unmatched routes.
     "/*": index,
 

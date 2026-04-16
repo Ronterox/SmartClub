@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Shield } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "../ui/Button";
 
 const navLinks = [
@@ -19,7 +19,7 @@ export function Header() {
       <div className="container">
         <div className="flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <Shield className="h-8 w-8 text-primary" />
+            <img src="/logo.png" alt="SmartClub" className="h-8 w-8 object-contain" />
             <span className="text-xl font-semibold">SmartClub</span>
           </Link>
 

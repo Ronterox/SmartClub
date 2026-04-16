@@ -204,7 +204,7 @@ export function HomePage() {
                 Comenzar Ahora
                 <ArrowRight className="h-5 w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+              <Button variant="outline" size="lg">
                 Hablar con Ventas
               </Button>
             </div>

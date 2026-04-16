@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Shield, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
-              <Shield className="h-8 w-8 text-primary" />
+            <img src="/logo.png" alt="SmartClub" className="h-8 w-8 object-contain" />
               <span className="text-xl font-semibold">SmartClub</span>
             </Link>
             <p className="text-sm text-muted-foreground">
